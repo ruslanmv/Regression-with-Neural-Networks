@@ -71,7 +71,7 @@ df.isna()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -264,7 +264,7 @@ df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -364,7 +364,7 @@ df.iloc[:,1:].head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -460,7 +460,7 @@ df_norm.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -557,7 +557,7 @@ print(convert_label_value(-1.836486), " that corresponds to the price 12032")
 ```
 
     12031  that corresponds to the price 12032
-    
+
 
 # Create Training and Test Sets
 
@@ -583,7 +583,7 @@ x.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -674,7 +674,7 @@ y.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -728,7 +728,7 @@ print('labels array shape', y_arr.shape)
 
     features array shape (5000, 6)
     labels array shape (5000, 1)
-    
+
 
 ## Train and Test Split
 
@@ -746,7 +746,7 @@ print( 'Test set', x_test.shape, y_test.shape)
 
     Training set (4750, 6) (4750, 1)
     Test set (250, 6) (250, 1)
-    
+
 
 Let's write a function that returns an untrained model
 of a certain architecture.
@@ -856,7 +856,7 @@ get_model().summary()
     Trainable params: 401
     Non-trainable params: 0
     _________________________________________________________________
-    
+
 
 The first dense layer that you see here is our first
 hidden there, which has 10 nodes.
@@ -953,7 +953,7 @@ history = model.fit(
     149/149 [==============================] - 0s 1ms/step - loss: 0.1516 - val_loss: 0.1601
     Epoch 19/100
     149/149 [==============================] - 0s 1ms/step - loss: 0.1510 - val_loss: 0.1593
-    
+
 
 ##  Plot Training and Validation Loss
 
@@ -965,9 +965,9 @@ plot_loss(history)
 ```
 
 
-    
+​    
 ![png](Regression-with-Neural-Networks_files/Regression-with-Neural-Networks_45_0.png)
-    
+​    
 
 
 The training and validation loss.
@@ -992,9 +992,9 @@ compare_predictions(preds_on_untrained,preds_on_trained,y_test)
 ```
 
 
-    
+​    
 ![png](Regression-with-Neural-Networks_files/Regression-with-Neural-Networks_49_0.png)
-    
+​    
 
 
 You can see the pattern.
@@ -1026,9 +1026,9 @@ compare_predictions(preds_on_untrained,preds_on_trained,y_test)
 ```
 
 
-    
+​    
 ![png](Regression-with-Neural-Networks_files/Regression-with-Neural-Networks_53_0.png)
-    
+​    
 
 
 We pretty much get the same graph, but the ranges are now
